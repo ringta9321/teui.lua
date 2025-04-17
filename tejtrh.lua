@@ -151,4 +151,4 @@ CreateButton(TownsTab, "Town 5", function()
 end, UDim2.new(0.1, 0, 0.77, 0))
 
 CreateButton(TownsTab, "Town 6", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/ringta9321/tptown6.github.io
+    loadstring(game:HttpGet("https://raw.githubusercontent
