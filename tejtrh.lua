@@ -119,35 +119,36 @@ end, UDim2.new(0.1, 0, 0.2, 0))
 -- Towns Tab for Town Teleports
 local TownsTab = CreateTab("Towns")
 
+-- Instruction Text at the Top of Towns Tab
+local InstructionLabel = Instance.new("TextLabel", TownsTab)
+InstructionLabel.Text = "YOU NEED TO PRESS TP TO TRAIN FOR NEW TOWN"
+InstructionLabel.Size = UDim2.new(1, -20, 0, 20) -- Full width minus padding
+InstructionLabel.Position = UDim2.new(0, 10, 0, 10) -- Positioned at the top with some padding
+InstructionLabel.BackgroundTransparency = 1 -- No background
+InstructionLabel.TextColor3 = Theme.Text
+InstructionLabel.Font = Enum.Font.GothamBold
+InstructionLabel.TextSize = 12 -- Slightly smaller text for neatness
+
+-- Add buttons for Town teleports
 CreateButton(TownsTab, "Town 1", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/ringta9321/tptown1.github.io/refs/heads/main/town1.lua"))()
-end, UDim2.new(0.1, 0, 0.2, 0))
+end, UDim2.new(0.1, 0, 0.25, 0))
 
 CreateButton(TownsTab, "Town 2", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/ringta9321/tptown2.github.io/refs/heads/main/town2.lua"))()
-end, UDim2.new(0.1, 0, 0.34, 0))
+end, UDim2.new(0.1, 0, 0.38, 0))
 
 CreateButton(TownsTab, "Town 3", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/ringta9321/tptown3.github.io/refs/heads/main/town3.lua"))()
-end, UDim2.new(0.1, 0, 0.48, 0))
+end, UDim2.new(0.1, 0, 0.51, 0))
 
 CreateButton(TownsTab, "Town 4", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/ringta9321/tptown4.github.io/refs/heads/main/town4.lua"))()
-end, UDim2.new(0.1, 0, 0.62, 0))
+end, UDim2.new(0.1, 0, 0.64, 0))
 
 CreateButton(TownsTab, "Town 5", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/ringta9321/tptown5.github.io/refs/heads/main/town5.lua"))()
-end, UDim2.new(0.1, 0, 0.76, 0))
+end, UDim2.new(0.1, 0, 0.77, 0))
 
 CreateButton(TownsTab, "Town 6", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/ringta9321/tptown6.github.io/refs/heads/main/town6.lua"))()
-end, UDim2.new(0.1, 0, 0.9, 0))
-
--- Minimize Button
-local MinimizeButton = Instance.new("TextButton", MainFrame)
-MinimizeButton.Text, MinimizeButton.Size, MinimizeButton.Position = "-", UDim2.new(0, 20, 0, 20), UDim2.new(1, -25, 0, 5)
-MinimizeButton.BackgroundColor3 = Color3.fromRGB(0, 255, 0) -- Changed to bright green for better visibility
-MinimizeButton.TextColor3 = Theme.Text
-Instance.new("UICorner", MinimizeButton).CornerRadius = UDim.new(0, 6)
-
--- Reopen Button (Hidden
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ringta9321/tptown6.github.io
