@@ -119,6 +119,7 @@ end, UDim2.new(0.1, 0, 0.2, 0))
 -- Towns Tab for Town Teleports
 local TownsTab = CreateTab("Towns")
 
+-- Add buttons for Town teleports
 CreateButton(TownsTab, "Town 1", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/ringta9321/tptown1.github.io/refs/heads/main/town1.lua"))()
 end, UDim2.new(0.1, 0, 0.2, 0))
@@ -148,6 +149,4 @@ local MinimizeButton = Instance.new("TextButton", MainFrame)
 MinimizeButton.Text, MinimizeButton.Size, MinimizeButton.Position = "-", UDim2.new(0, 20, 0, 20), UDim2.new(1, -25, 0, 5)
 MinimizeButton.BackgroundColor3 = Color3.fromRGB(0, 255, 0) -- Changed to bright green for better visibility
 MinimizeButton.TextColor3 = Theme.Text
-Instance.new("UICorner", MinimizeButton).CornerRadius = UDim.new(0, 6)
-
--- Reopen Button (Hidden
+Instance
